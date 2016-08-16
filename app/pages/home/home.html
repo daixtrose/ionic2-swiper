@@ -1,0 +1,44 @@
+<!--
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Ionic Blank
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  The world is your oyster.
+  <p>
+    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will be your guide.
+  </p>
+</ion-content>
+-->
+
+
+<ion-slides #mainSlider [options]="slideOptions">
+  <ion-slide>
+    <h1>Should appear GeneralInfo</h1>
+    <general-info-page></general-info-page>
+  </ion-slide>
+  <ion-slide>
+    <h1>Should appear Water</h1>
+    <water-info-page></water-info-page>
+  </ion-slide>
+  <ion-slide>
+    <ion-row>
+      <ion-col>
+        <img src="images/slide4.png" />
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col>
+        <button light (click)="goToHome()">Start Using My App</button>
+      </ion-col>
+      <ion-col>
+       <about-page></about-page>
+      </ion-col>
+    </ion-row>
+  </ion-slide>
+
+</ion-slides>
